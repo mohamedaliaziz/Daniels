@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,span{
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    width:  100%;
+}
+a{
+    color:#111 !important;
+    text-decoration: none;
+}
+.navbar{
+    z-index: 99999;
+}
+/* home  */
+#home {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position:center center;
+}
+#home .home-content p {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:200;
+
+}
+#home .home-content h5 {
+    font-size: 3rem !important ;
+    
+}
+#home .home-content p span  {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:200;
+    
+}
+#home .home-content p span::after  {
+content: ' |';
+
+animation-name: text;
+animation-duration:5s ;
+ padding-left:10px;
+ animation-iteration-count: infinite;
+}
+.nav-link{
+    color: #111;
+}
+
+#about .rounded-circle {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@keyframes text{
+    2%{content: "L |";}
+    4%{content: " La |";}
+    6%{content: " Lar|";}
+   8%{content: " Larr";}
+    10%{content: " Larr|";}
+    12%{content: " Larrv|";}
+    14%{content: " LarrvF |";}
+    16%{content: " LarrvFol|";}
+    18%{content: "LarrvFoli|";}
+    20%{content: "LarrvFolio|";}
+    22%{content: "LarrvFolio|";}
+    24%{content: "LarrvFolio|";}
+    26%{content: "LarrvFolio|";}
+    28%{content: "LarrvFoli|"; ;}
+    30%{content: " LarrvFol|";}
+    32%{content: "LarrvFo |";}
+    34%{content: "  LarrvF|";}
+    36%{content: " Larrv|";}
+    38%{content: " Larr|";}
+    40%{content: " Lar|";}
+    42%{content: "La  |";}
+    44%{content: " L |";}
+    
+   46%{content: " D |";}
+   48%{content: " De|";}
+    50%{content: " Dev|";}
+    52%{content: " Deve|";}
+    54%{content: "  Devel|";}
+    56%{content: " Develo|";}
+    58%{content: " Develop|";}
+    60%{content: " Develope|";}
+    62%{content: " Developer|";}
+   66%{content: " Developer|";}
+    
+    68%{content: " Develope|";}
+    69%{content: " Develop|";}
+    70%{content: " Develo|";}
+    71%{content: " Devel |";}
+    72%{content: " Deve|";}
+   73%{content: " Dev|";}
+    74%{content: " De|";}
+    75%{content: " D|";}
+    76%{content: " D |";}
+    77%{content: " De|";}
+    78%{content: " Des|";}
+    79%{content: " Desi|";}
+   80%{content: " Desig|";}
+    81%{content: " Design|";}
+    82%{content: " Designe|";}
+    83%{content: " Designer|";}
+    84%{content: " Designer|";}
+    90%{content: " Designer|";}
+    91%{content: " Designe";}
+    92%{content: " Design|"; ;}
+    93%{content: " Desig|";}
+    94%{content: " Desi |";}
+    95%{content: " Des|";}
+    96%{content: " De|";}
+    97%{content: " D";}
+    98%{content: " D|";}
+}
+/* about */
+.progress {
+    height: 1.5rem !important;
+    line-height: 1.5rem;
+
+   
+}
+.content-about > span{
+    letter-spacing:2px;
+    
+}
+.submet .btn{
+    transition:all 1s ;
+
+}
+  
+      .btn-dark:hover{
+        background-color:#fff;
+        color:#212529;
+      }
+      .about-img::after{
+        content: "";
+        position: absolute;
+        background-image: url(../img/dots.png);
+        background-position: center center ;
+        width: 85%;
+        height: 85%;
+        bottom: -35px;
+        left: 18px;
+        z-index: -22 ;
+      }
+/* end about */
+/* start Services */
+
+.text h2{
+    font-weight: 900!important;
+    z-index: 4;
+}
+.text{
+    width:fit-content;
+    
+}
+.text::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-image: url(../img/dots.png);
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+}
+#Services .rounded-circle{
+    width:5rem;
+    height:5rem;
+}
+.card{
+    border: none;
+}
+#Services .card span {
+    transition: all 1s ;
+
+}
+#Services .card:hover span {
+    background-color: #212529 !important;
+    color: #fff;
+  
+}
+.modal-header{
+    border: none !important;
+    position: relative;
+    top: 15px;
+}
+ .owl-nav{
+display: none !important;
+}
+
+/* end Services */
+/* start Portfolio */
+.modal-content{
+    top:20px;
+}
+#Portfolio .rounded-circle{
+    width:2rem;
+    height:2rem;
+}
+.Portfolio-layer {
+    
+    top: 5px !important;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+     z-index: 2; 
+    
+     transform: translateY(10px); 
+}
+.Portfolio-layer p{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 15px;
+    -webkit-transform: translateY(-15px); 
+     transform: translateY(-15px); 
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.Portfolio-layer:hover{
+    opacity: 1;
+    transform: translateY(0);
+}
+.Portfolio-layer:hover p{
+    
+    transform: translateY(0);
+}
+#Portfolio .nav-pills .nav-link.active{
+border-bottom: #111 solid 2px;
+   
+}
+/* end Portfolio */
+/* start Testimonials */
+.client-feedback img{
+    width: 10%;
+}
+.carousel-indicators [data-bs-target] {
+    width:10px;
+    height: 10px;
+    background-color: #D6D6D6;
+    
+    
+}
+.carousel-indicators .active {
+background-color: #869791;
+}
+/* end Testimonials */
+/* start Contact */
+#Contact .rounded-circle {
+    width: 4rem;
+    height: 4rem;
+}
+#Contact .item span{
+    transition: all 1s;
+
+}
+#Contact .item span:hover  {
+    background-color: #212529 !important;
+    color: #fff;
+  
+}
+.carousel-indicators{
+    bottom: -50px !important;
+}
+
+ #Contact form button {
+    transition:all 1s ;
+
+}
+/* end Contact */
+/* start bolg */
+.more{
+    border-bottom: #111 solid 2px;
+}
+
+
+#bolg .card img{
+ transition: all .5s;
+
+}
+#bolg .card .img-1:hover img{
+ 
+ transform: scale(1.15);
+
+}
+/* end bolg */

@@ -1,0 +1,5 @@
+@media screen and (max-width:576px) {
+    #about .col-lg-5 {
+        margin-bottom:50px !important;
+    }
+}
